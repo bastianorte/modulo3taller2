@@ -75,7 +75,7 @@ Las operaciones comunes incluyen insertar, eliminar, y recorrer los nodos de la 
 ### Stack
 
 <picture>
-  <img src="https://github.com/bastianorte/modulo3taller2/blob/main/assets/images/heap.webp">
+  <img src="https://github.com/bastianorte/modulo3taller2/blob/main/assets/images/stack.webp">
 </picture>
 
 Una pila (stack) es una estructura de datos donde el último elemento en entrar es el primero en
@@ -87,7 +87,7 @@ Una cola (queue) es una estructura de datos donde el primer elemento en entrar e
 en salir (FIFO - First In, First Out). 
 
 <picture>
-  <img src="https://github.com/bastianorte/modulo3taller2/blob/main/assets/images/heap.webp">
+  <img src="https://github.com/bastianorte/modulo3taller2/blob/main/assets/images/queue.webp">
 </picture>
 
 ### Heap
