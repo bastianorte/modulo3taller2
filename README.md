@@ -100,7 +100,7 @@ Heap es una estructura de datos donde los elementos se almacenan y eliminan en c
 
 
 
-## 📁 Integración de prompts
+### Integración de prompts
 Integración de los prompts en un botón en la barra de navegación, además de la validación de los datos de teléfono y correo mediante expresiones regulares (regex).
 
 ```
@@ -129,6 +129,52 @@ function solicitarDatos() {
     alert(`Formulario enviado correctamente tu nombre es ${nombre} tu correo es ${correo} y tu telefono es ${telefono}`);
 }
 ```
+
+### Debugger
+Se aplicó un debugger en el formulario de contacto, para verificar en la consola si los campos se están leyendo correctamente antes de realizar las validaciones.
+
+### try/catch
+Se implementó un try/catch en el formulario de contacto para gestionar y validar los errores en las validaciones de los campos.
+
+´´´
+    try {
+        // Obtener valores de los campos del formulario
+        const nombre = document.getElementById("name").value;
+        const correo = document.getElementById("email").value;
+        const telefono = document.getElementById("phone").value;
+
+        console.log("Formulario enviado con los siguientes valores:");
+        console.log("Nombre:", nombre);
+        console.log("Correo:", correo);
+
+        console.log(nombre);
+
+        console.log(correo);
+
+        console.log(telefono);
+        
+        // Debugger 
+        debugger; 
+        
+        // Validaciones
+        validarNombre(nombre);
+        validarCorreo(correo);
+        validarTelefono(telefono);
+
+
+        
+        // Si todo es válido, mostrar un mensaje de éxito
+        alert("Formulario enviado correctamente.");
+
+        // Limpiar el formulario
+        document.getElementById("contactForm").reset();
+        
+    } catch (error) {
+        // Si ocurre un error en alguna validación, lo mostramos
+        alert("Error: " + error.message);
+    }
+});
+´´´
 
 ## 🔧 Tecnologías utilizadas
 * Bootstrap

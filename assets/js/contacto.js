@@ -14,15 +14,28 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         console.log("Formulario enviado con los siguientes valores:");
         console.log("Nombre:", nombre);
         console.log("Correo:", correo);
-        console.log("Teléfono:", telefono);
+
+        console.log(nombre);
+
+        console.log(correo);
+
+        console.log(telefono);
+        
+        // Debugger 
+        debugger; 
         
         // Validaciones
         validarNombre(nombre);
         validarCorreo(correo);
         validarTelefono(telefono);
+
+
         
         // Si todo es válido, mostrar un mensaje de éxito
         alert("Formulario enviado correctamente.");
+
+
+
 
         // Debugger 
         debugger; 
