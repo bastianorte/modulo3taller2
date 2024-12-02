@@ -137,7 +137,7 @@ Se aplicó un debugger en el formulario de contacto, para verificar en la consol
 Se implementó un try/catch en el formulario de contacto para gestionar y validar los errores en las validaciones de los campos.
 
 ´´´
-contacto.js
+// contacto.js
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();  // Evitar el envío normal del formulario
