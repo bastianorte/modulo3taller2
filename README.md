@@ -13,17 +13,14 @@ resultados por consola o como alertas en el navegador.
   Si tienes Git instalado en tu máquina, puedes clonar el repositorio usando el siguiente comando en tu terminal o línea de comandos:
 
   ```
-  git clone https://github.com/bastianorte/modulo2e3.git
+  git clone https://github.com/bastianorte/modulo3taller2.git
   ```
 
-  Puedes ver los archivos HTML en un navegador
+  #### Para poder ver la Web de forma correcta debes generar un servidor con "Live Server" de Visual Studio Code o similar
   
   Para modificar los archivos SASS, abre la carpeta descargada en Visual Studio Code
 
   Utiliza la extension "Live SASS Compiler" para modificar los archivos SCSS
-
-  Tambien puedes visualizar la pagina en el siguiente link:
-  https://bastianorte.github.io/modulo2e3/index.html
 
 ## 📁 Proyecto 
 ```
@@ -58,6 +55,11 @@ resultados por consola o como alertas en el navegador.
 │   ├── images
 │   │     └── ..images.jpg
 │   └──  js    
+│         ├── banner.js
+│         ├── contacto.js
+│         ├── data.js
+│         ├── daaequipo.js
+│         ├── equipo.js
 │         └── main.js       
 │
 ├── contacto.html  
@@ -65,6 +67,10 @@ resultados por consola o como alertas en el navegador.
 ├── index.html 
 ├── readme.md                  
 ```
+
+## 📁 Integración de prompts
+
+
 
 ## 🔧 Tecnologías utilizadas
 * Bootstrap
