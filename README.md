@@ -136,7 +136,7 @@ Se aplicó un debugger en el formulario de contacto, para verificar en la consol
 ### try/catch
 Se implementó un try/catch en el formulario de contacto para gestionar y validar los errores en las validaciones de los campos.
 
-´´´
+```
 // contacto.js
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
@@ -178,7 +178,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
 });
 
-´´´
+```
 
 ## 🔧 Tecnologías utilizadas
 * Bootstrap
