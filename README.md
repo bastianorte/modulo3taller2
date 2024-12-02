@@ -139,6 +139,9 @@ Se implementó un try/catch en el formulario de contacto para gestionar y valida
 ´´´
 contacto.js
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();  // Evitar el envío normal del formulario
+    
     try {
         // Obtener valores de los campos del formulario
         const nombre = document.getElementById("name").value;
