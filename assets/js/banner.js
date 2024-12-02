@@ -1,19 +1,16 @@
 function solicitarDatos() {
-    // Solicitar Nombre
     let nombre = prompt("Por favor, ingresa tu nombre:", "");
     if (nombre === null || nombre.trim() === "") {
         alert("El nombre es obligatorio.");
         return; // Si no se ingresa nombre, salir de la función
     }
     console.log(nombre)
-    // Solicitar Correo Electrónico
     let correo = prompt("Por favor, ingresa tu correo electrónico:", "");
     if (correo === null || correo.trim() === "" || !validarCorreo(correo)) {
         alert("Correo inválido o vacío.");
         return;
     }
     console.log(correo)
-    // Solicitar Teléfono
     let telefono = prompt("Por favor, ingresa tu número de teléfono (con formato +569):", "+569");
     if (telefono === null || telefono.trim() === "" || !validarTelefono(telefono)) {
         alert("Teléfono inválido o vacío.");
@@ -21,7 +18,7 @@ function solicitarDatos() {
     }
     console.log(telefono)
 
-    // Si todo está bien, mostrar mensaje de éxito
+    // Si todo está bien, mostrar alerta
     alert(`Formulario enviado correctamente tu nombre es ${nombre} tu correo es ${correo} y tu telefono es ${telefono}`);
 }
 

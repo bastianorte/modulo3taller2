@@ -68,9 +68,67 @@ resultados por consola o como alertas en el navegador.
 ├── readme.md                  
 ```
 
+## Cómo funciona el event loop (stack, heap, queue)
+
+Las operaciones comunes incluyen insertar, eliminar, y recorrer los nodos de la lista.
+
+### Stack
+
+<picture>
+  <img src="https://github.com/bastianorte/Modulo3Laboratorio1/blob/main/assets/images/cap1.png">
+</picture>
+
+Una pila (stack) es una estructura de datos donde el último elemento en entrar es el primero en
+salir (LIFO - Last In, First Out).
+
+### Queue
+
+Una cola (queue) es una estructura de datos donde el primer elemento en entrar es el primero
+en salir (FIFO - First In, First Out). 
+
+<picture>
+  <img src="https://github.com/bastianorte/Modulo3Laboratorio1/blob/main/assets/images/cap1.png">
+</picture>
+
+### Heap
+
+Heap es una estructura de datos donde los elementos se almacenan y eliminan en cualquier orden.
+
+<picture>
+  <img src="https://github.com/bastianorte/Modulo3Laboratorio1/blob/main/assets/images/cap1.png">
+</picture>
+
+
+
 ## 📁 Integración de prompts
+Integración de los prompts en un botón en la barra de navegación, además de la validación de los datos de teléfono y correo mediante expresiones regulares (regex).
 
+```
+banner.js
+function solicitarDatos() {
+    let nombre = prompt("Por favor, ingresa tu nombre:", "");
+    if (nombre === null || nombre.trim() === "") {
+        alert("El nombre es obligatorio.");
+        return; 
+    }
+    console.log(nombre)
+    let correo = prompt("Por favor, ingresa tu correo electrónico:", "");
+    if (correo === null || correo.trim() === "" || !validarCorreo(correo)) {
+        alert("Correo inválido o vacío.");
+        return;
+    }
+    console.log(correo)
+    let telefono = prompt("Por favor, ingresa tu número de teléfono (con formato +569):", "+569");
+    if (telefono === null || telefono.trim() === "" || !validarTelefono(telefono)) {
+        alert("Teléfono inválido o vacío.");
+        return;
+    }
+    console.log(telefono)
 
+    // Si todo está bien, mostrar alerta
+    alert(`Formulario enviado correctamente tu nombre es ${nombre} tu correo es ${correo} y tu telefono es ${telefono}`);
+}
+```
 
 ## 🔧 Tecnologías utilizadas
 * Bootstrap
