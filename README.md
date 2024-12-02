@@ -1,4 +1,4 @@
-# Evaluacion m3 t2
+# Evaluacion Modulo3 taller2
 
 ## 📖 Descripción
 En este taller, los estudiantes deben continuar incorporando funcionalidades de JavaScript
@@ -137,6 +137,8 @@ Se aplicó un debugger en el formulario de contacto, para verificar en la consol
 Se implementó un try/catch en el formulario de contacto para gestionar y validar los errores en las validaciones de los campos.
 
 ´´´
+contacto.js
+
     try {
         // Obtener valores de los campos del formulario
         const nombre = document.getElementById("name").value;
@@ -174,6 +176,7 @@ Se implementó un try/catch en el formulario de contacto para gestionar y valida
         alert("Error: " + error.message);
     }
 });
+
 ´´´
 
 ## 🔧 Tecnologías utilizadas
