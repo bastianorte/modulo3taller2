@@ -1,4 +1,4 @@
-# Evaluacion Modulo3 taller2
+# Evaluacion Modulo3 Taller2
 
 ## 📖 Descripción
 En este taller, los estudiantes deben continuar incorporando funcionalidades de JavaScript

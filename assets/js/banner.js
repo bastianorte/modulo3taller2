@@ -18,17 +18,17 @@ function solicitarDatos() {
     }
     console.log(telefono)
 
-    // Si todo está bien, mostrar alerta
+    // Alerta
     alert(`Formulario enviado correctamente tu nombre es ${nombre} tu correo es ${correo} y tu telefono es ${telefono}`);
 }
 
-// Función para validar correo electrónico
+// Validar correo electrónico
 function validarCorreo(correo) {
     const regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA0-9.-]+\.[a-zA-Z]{2,}$/;
     return regexCorreo.test(correo);
 }
 
-// Función para validar teléfono (Debe empezar con +569 y tener 8 dígitos)
+// Validar teléfono (Debe empezar con +569 y tener 8 dígitos)
 function validarTelefono(telefono) {
     const regexTelefono = /^\+569\d{8}$/;
     return regexTelefono.test(telefono);

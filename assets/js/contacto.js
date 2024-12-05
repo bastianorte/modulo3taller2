@@ -3,7 +3,7 @@
 
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();  // Evitar el envío normal del formulario
+    event.preventDefault(); 
     
     try {
         // Obtener valores de los campos del formulario
@@ -34,11 +34,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         // Si todo es válido, mostrar un mensaje de éxito
         alert("Formulario enviado correctamente.");
 
-
-
-
-        // Debugger 
-        debugger; 
         // Limpiar el formulario
         document.getElementById("contactForm").reset();
         
@@ -48,14 +43,14 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
 });
 
-// Función de validación para el nombre
+// Nombre
 function validarNombre(nombre) {
     if (!nombre || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre)) {
         throw new Error("El nombre no es válido. Solo se permiten letras y espacios.");
     }
 }
 
-// Función de validación para el correo
+// Correo
 function validarCorreo(correo) {
     const regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!correo || !regexCorreo.test(correo)) {
@@ -63,7 +58,7 @@ function validarCorreo(correo) {
     }
 }
 
-// Función de validación para el teléfono
+// Teléfono
 function validarTelefono(telefono) {
     const regexTelefono = /^\+569\d{8}$/;
     if (!telefono || !regexTelefono.test(telefono)) {
